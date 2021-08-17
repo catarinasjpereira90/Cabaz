@@ -1,0 +1,35 @@
+header {
+    .wrapper {
+        background-color: #ff8762;
+        height: 20vh;
+        nav {
+            display: flex;
+            top: 50%;
+            position: relative;
+            transform: translateY(-50%);
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 6px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                margin-left: 4px;
+                font-size: 19px;
+                transition: 0.2s;
+                &:hover {
+                    color: white;
+                    opacity: 80%;
+                }
+            }
+            .logo {
+                font-family: $font-2;
+                font-size: 65px;
+                margin-right: auto;
+                font-weight:900;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.bottom {
+    .wrapper {
+        text-align: center;
+        height: 30vh;
+        article {
+            margin-bottom: 25px;
+            border: black;
+            h3 {
+                font-size: 23px;
+                margin-bottom: 15px;
+                font-family: $font;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        form {
+            input {
+                font-family: $font;
+                padding: 10px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                font-size: 15px;
+                margin: 1px;
+            }
+            input.btn-0 {
+                cursor: pointer;
+                transition: 0.2s;
+                &:hover {
+                    opacity: 70%;
+                }
+            }
+        }
+    }
+}

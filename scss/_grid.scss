@@ -1,0 +1,50 @@
+.grid {
+    .wrapper {
+        padding-top: 100px;
+        .grid-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 300px 300px 300px;
+            div {
+                background-color: #ffba95;
+                position: relative;
+
+                &:nth-of-type(odd) {
+                    background-color: #ffa270;
+                }
+                &:nth-of-type(3) {
+                    background-color: #ec5f35;
+                }
+                &:nth-of-type(7) {
+                    background-color: #ec5f35;
+                }
+                article {
+                    text-align: center;
+                    top: 50%;
+                    position: absolute;
+                    width: 100%;
+                    transform: translateY(-50%);
+                    a {
+                        margin: 5px;
+                        text-decoration: none;
+                        color: black;
+                        font-size: 16px;
+                        font-weight: bold;
+                        font-size: 35px;
+                        font-family:$font-2;
+                        transition:0.2s;
+                        &:hover {
+                            font-size: 40px;
+                        }
+                    }
+                    p {
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

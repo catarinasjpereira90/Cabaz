@@ -1,0 +1,80 @@
+.hero {
+    .wrapper {
+        height: 80vh;
+        position: relative;
+        padding: 0px;
+        .multiple-items {
+            height: 100%;
+            overflow: hidden;
+            div {
+                img {
+                    width: 100%;
+                    position: relative;
+                    bottom: 450px;
+                    opacity: 0.85;
+                }
+            }
+        }
+        .slick-prev {
+            i {
+                font-size: 40px;
+                position: absolute;
+                z-index: 1;
+                color: black;
+                top: 50%;
+                left: 3%;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 70%;
+                }
+            }
+        }
+        .slick-next {
+            i {
+                font-size: 40px;
+                position: absolute;
+                z-index: 1;
+                color: black;
+                top: 50%;
+                right: 3%;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 70%;
+                }
+            }
+        }
+    }
+    h1 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 900;
+        color:black;
+        top: 50%;
+    }
+    ul {
+        position: absolute;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 5%;
+        width: 100%;
+        li {
+            align-items: center;
+            margin: 5px;
+            &:nth-of-type(1) {
+                justify-content: flex-end;
+            }
+            a {
+                &:hover {
+                    color: black;
+                    background: rgba(255, 255, 255, 0.8);
+                }
+            }
+        }
+    }
+}

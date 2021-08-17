@@ -1,0 +1,77 @@
+.image {
+    height: 80vh;
+    .wrapper {
+        text-align: center;
+        .grid-0 {
+            display: grid;
+            grid-template-columns: 20% 45% 20%;
+            height: 70%;
+            justify-content: center;
+            margin: 50px auto;
+            article {
+                margin: auto;
+                text-align: center;
+                width: 100%;
+                text-align: left;
+                h3 {
+                    font-family: $font-2;
+                    font-size: 35px;
+                    margin: 5px auto;
+                    margin-bottom: 0px;
+                }
+                p {
+                    display: inline-block;
+                    margin-top: 2px;
+                    margin-bottom: 5px;
+                    width: 100%;
+                }
+            }
+            div {
+                position: relative;
+                img {
+                    max-width: 100%;
+                }
+                ul.image-list {
+                    position: absolute;
+                    top: 4%;
+                    left: 3%;
+                    padding: 0px;
+                    margin: 0px;
+                    li img {
+                        border: white;
+                        border-style: solid;
+                    }
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        margin-left: 2px;
+                        img {
+                            height: 70px;
+                        }
+                    }
+                }
+            }
+            ul.list {
+                text-align: left;
+                list-style-type: none;
+                margin: auto;
+                margin-left: 5px;
+            }
+        }
+        .list-02 {
+            padding: 0;
+            li {
+                list-style-type: none;
+                display: inline-block;
+                a {
+                    display: inline-block;
+                    list-style-type: none;
+                    margin-left: 3px;
+                    &:hover {
+                        opacity: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

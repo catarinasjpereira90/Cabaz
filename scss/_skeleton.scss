@@ -1,0 +1,30 @@
+body {
+    font-family: $font;
+    margin: 0px;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background:#E8E8E8;
+    padding: 40px;
+}
+.btn-0 {
+    color: white;
+    background: black;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: $font;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-1 {
+    color:white;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    text-decoration: none;
+    font-family: $font;
+    padding: 12px;
+    border-radius: 10px;
+}
