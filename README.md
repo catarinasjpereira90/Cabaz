@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
@@ -43,3 +44,14 @@ Use these steps to clone from SourceTree, our client for using the repository co
 4. Open the directory you just created to see your repository’s files.
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+=======
+# Cabaz
+This project's graphic design and front-end development was created by me.
+It responds to an e-commerce exercise given by EDIT - Disruptive and Digital Education.
+
+The aim was to create a sales platform prototype. 
+I've chosen fruits and vegetables basket as a theme and called this brand "Cabaz".  
+
+Please, check it on 
+https://catarinasjpereira90.github.io/Cabaz/
+>>>>>>> 0730a29bd1513dd519670af02f34a4af90fe1830
