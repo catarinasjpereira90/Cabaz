@@ -1,0 +1,39 @@
+//MQ
+  /* Break Points */
+  $tablet-width: 1024px;
+  $phablet-width: 768px;
+  $mobile-width: 512px;
+  $smallerMobile-width: 350px;
+  
+  @mixin mq($smallerValue, $biggerValue) {
+    @media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
+      @content;
+    }
+  }
+  
+  //Most Used MQ'S
+  @mixin tablet {
+    @media (min-width: 0) and (max-width: #{$tablet-width}) {
+      @content;
+    }
+  }
+  
+  @mixin phablet {
+    @media (min-width: 0) and (max-width: #{$phablet-width}) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (min-width: 0) and (max-width: #{$mobile-width}) {
+      @content;
+    }
+  }
+  
+  @mixin smallerMobile {
+    @media (min-width: 0) and (max-width: #{$smallerMobile-width}) {
+      @content;
+    }
+  }
+
+
