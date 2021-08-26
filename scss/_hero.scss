@@ -69,6 +69,9 @@
         align-items: center;
         bottom: 5%;
         width: 100%;
+        @include mq(0, 512px) {
+            bottom: 10%;
+        }
         li {
             align-items: center;
             margin: 5px;
