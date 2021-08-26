@@ -12,6 +12,9 @@
                     position: relative;
                     bottom: 450px;
                     opacity: 0.85;
+                    @include mq(0, 512px) {
+                        bottom: 0px;
+                    }
                 }
             }
         }
@@ -54,6 +57,9 @@
         font-weight: 900;
         color: black;
         top: 50%;
+        @include mq(0, 512px) {
+            display: none;
+        }
     }
     ul {
         position: absolute;

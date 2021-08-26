@@ -1,4 +1,7 @@
 .bottom-arrows{
+    @include mq(0, 512px) {
+        display:none;
+    }
     .wrapper{
         padding:0px;
         .multiple-items{

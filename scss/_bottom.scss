@@ -24,6 +24,12 @@
                 font-size: 15px;
                 margin: 1px;
             }
+            input[type="text"] {
+                width: 50%;
+                @include mq(0, 512px) {
+                    width: 80%;
+                }
+            }
             input.btn-0 {
                 cursor: pointer;
                 transition: 0.2s;
