@@ -34,6 +34,9 @@
                 img {
                     max-width: 100%;
                     object-fit: cover;
+                    @include mq(0, 512px) {
+                        margin-top:5px;
+                    }
                 }
                 ul.image-list {
                     position: absolute;
