@@ -6,14 +6,27 @@
             top: 50%;
             transform: translateY(-50%);
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
+            grid-template-columns: 1fr 1fr;
+            @include mq(0, 512px) {
+                flex-direction: row;
+                grid-template-columns: 1fr;
+                height: 100%;
+            }
             article {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
+                @include mq(0, 512px) {
+                    justify-content: space-between;
+                }
                 h3 {
                     font-family: $font-2;
                     font-size: 35px;
+                }
+                .list {
+                    @include mq(0, 512px) {
+                        font-size: 15px;
+                    }
                 }
             }
             div {
@@ -30,14 +43,17 @@
                         border: white;
                         border-style: solid;
                     } */
+                    @include mq(0, 512px) {
+                        display: none;
+                    }
                     li {
                         display: inline-block;
                         margin-left: 3px;
                         img {
                             height: 100px;
-                            transition: transform .2s;
-                            &:hover{
-                                transform:scale(0.95);
+                            transition: transform 0.2s;
+                            &:hover {
+                                transform: scale(0.95);
                             }
                         }
                     }
