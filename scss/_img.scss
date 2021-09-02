@@ -2,9 +2,6 @@
     height: 80vh;
     .wrapper {
         .grid-0 {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
             display: grid;
             grid-template-columns: 1fr 1fr;
             @include mq(0, 512px) {
@@ -23,36 +20,38 @@
                     font-family: $font-2;
                     font-size: 35px;
                 }
-                .list {
+                /* .list {
                     @include mq(0, 512px) {
                         font-size: 15px;
                     }
-                }
+                } */
             }
             div {
                 position: relative;
-                display:flex;
+                display: flex;
+                @include mq(0, 512px) {
+                    display:none;
+                }
                 img {
                     max-width: 100%;
                     object-fit: cover;
                     @include mq(0, 512px) {
-                        margin-top:5px;
+                        margin-top: 5px;
+                        display:none;
                     }
                 }
                 ul.image-list {
                     position: absolute;
-                    bottom: 5%;
-                    right: 5%;
-                    /* li img {
-                        border: white;
-                        border-style: solid;
-                    } */
+                    display:flex;
+                    width:100%;
+                    justify-content: center;
+                    bottom:2%;
                     @include mq(0, 512px) {
                         display: none;
                     }
                     li {
                         display: inline-block;
-                        margin-left: 3px;
+                        margin-left: 5px;
                         img {
                             height: 80px;
                             transition: transform 0.2s;
@@ -65,7 +64,9 @@
             }
         }
         .list-02 {
-            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
             li {
                 list-style-type: none;
                 display: inline-block;
