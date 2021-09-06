@@ -1,13 +1,11 @@
 body {
     font-family: $font;
-    margin: 0px;
 }
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
     height: 100%;
-    width: 100%;
-    background:#E8E8E8;
+    background: #e8e8e8;
     padding: 40px;
 }
 .btn-0 {
@@ -20,7 +18,7 @@ body {
     border-radius: 5px;
 }
 .btn-1 {
-    color:white;
+    color: white;
     background: rgba(0, 0, 0, 0.9);
     font-size: 16px;
     text-decoration: none;
