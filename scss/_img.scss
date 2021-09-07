@@ -1,13 +1,13 @@
 .image {
-    height: 80vh;
     .wrapper {
+        height: 80vh;
         .grid-0 {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            height: 70%;
             @include mq(0, 512px) {
                 flex-direction: row;
                 grid-template-columns: 1fr;
-                height: 55vh;
             }
             article {
                 display: flex;
@@ -55,22 +55,24 @@
                 }
             }
         }
-        .list-02 {
-            display: flex;
-            justify-content: center;
-            margin-top: 5%;
-            @include mq(0, 512px) {
-                margin-bottom: 10%;
-            }
-            li {
-                list-style-type: none;
-                display: inline-block;
-                a {
-                    display: inline-block;
+        div {
+            .list-02 {
+                display: flex;
+                justify-content: center;
+                margin-top: 10%;
+                @include mq(0, 512px) {
+                    margin-bottom: 10%;
+                }
+                li {
                     list-style-type: none;
-                    margin-left: 3px;
-                    &:hover {
-                        opacity: 80%;
+                    display: inline-block;
+                    a {
+                        display: inline-block;
+                        list-style-type: none;
+                        margin-left: 3px;
+                        &:hover {
+                            opacity: 80%;
+                        }
                     }
                 }
             }
@@ -96,12 +98,33 @@
             .mobile-items {
                 height: 100%;
                 overflow: hidden;
-                button.slick-prev.slick-arrow {
-                    display: none;
+                div {
+                    img {
+                        height: 100vh;
+                        width: auto;
+                    }
                 }
-            }
-            .slick-slide img {
-                height: 100vh;
+                .slick-prev {
+                    display: none;
+                    @include mq(0, 512px) {
+                        i {
+                            font-size: 50px;
+                            position: absolute;
+                            z-index: 1;
+                            color: white;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            &:hover {
+                                cursor: pointer;
+                                opacity: 70%;
+                            }
+                        }
+                    }
+                    .slick-next {
+                        display: none;
+                    }
+                }
             }
         }
     }
