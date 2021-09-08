@@ -1,8 +1,31 @@
-.wrapper #nav-mobile{
-    display:none;
-    height:80vh;
-    nav{
-        height:100%;
-        display:flex;
+#nav-mobile {
+    display: none;
+    height: 40vh;
+    background-color:#ffba95;
+    @include mq(0, 512px) {
+        height: 80vh;
+    }
+    nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        @include mq(0, 512px) {
+            justify-content:flex-start;
+        }
+        div {
+            flex: 0.1;
+            @include mq(0, 512px) {
+                flex:0.1;
+            }
+            a {
+                color: black;
+                font-weight: bold;
+                font-size: 20px;
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
     }
 }
