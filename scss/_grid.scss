@@ -1,8 +1,5 @@
 .grid {
     .wrapper {
-        @include mq(0, 980px) {
-            padding: 0px;
-        }
         .grid-container {
             max-width: 900px;
             margin: 0 auto;
@@ -13,7 +10,7 @@
             justify-content: center;
             @include mq(0, 980px) {
                 height: 1200px;
-                grid-template-columns: 100%;
+                grid-template-columns: 80vw;
                 grid-template-rows: 300px 300px 300px 300px;
             }
             div {

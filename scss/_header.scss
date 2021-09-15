@@ -20,7 +20,6 @@ header {
                 font-size: 19px;
                 transition: 0.2s;
                 @include mq(0, 512px) {
-                    font-size: 17px;
                     margin-left: 0px;
                 }
                 &:hover {
@@ -34,7 +33,7 @@ header {
                 margin-right: auto;
                 font-weight: 900;
                 @include mq(0, 512px) {
-                    font-size: 55px;
+                    font-size: 60px;
                 }
             }
         }
