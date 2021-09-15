@@ -40,9 +40,9 @@
             font-size: 16px;
             margin-bottom: 10px;
             width: 100%;
-            @include mq(0, 768px) {
+            /* @include mq(0, 768px) {
                 font-size: 15px;
-            }
+            } */
         }
         input {
             max-width: 100%;
@@ -56,6 +56,9 @@
             border-radius: 5px;
             border-width: thin;
             line-height: 20px;
+            @include mq(0, 768px) {
+                line-height: 16px;
+            }
         }
         aside {
             max-width: calc(50% - 10px);
@@ -75,15 +78,15 @@
             border-radius: 5px;
             border-width: thin;
             outline: none;
-            @include mq(0, 768px) {
-                height: 90px;
-            }
+             @include mq(0, 768px) {
+                height: 110px;
+            } 
         }
     }
     .button {
         margin-top: 20px;
         @include mq(0, 768px) {
-            margin-top: 50px;
+            margin-top: 10%;
         }
         .btn-0 {
             display: inline-block;

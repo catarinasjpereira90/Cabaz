@@ -27,13 +27,16 @@ header {
                     opacity: 80%;
                 }
             }
-            .logo {
-                font-family: $font-2;
-                font-size: 65px;
-                margin-right: auto;
-                font-weight: 900;
-                @include mq(0, 512px) {
-                    font-size: 60px;
+            div.logo {
+                flex:5;
+                a {
+                    font-family: $font-2;
+                    font-size: 65px;
+                    margin-right: auto;
+                    font-weight: 900;
+                    @include mq(0, 512px) {
+                        font-size: 60px;
+                    }
                 }
             }
         }
