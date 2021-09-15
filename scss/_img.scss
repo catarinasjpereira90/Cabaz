@@ -114,9 +114,10 @@
                             top: 50%;
                             left: 50%;
                             transform: translateX(-50%);
+                            color:white;
                             &:hover {
                                 cursor: pointer;
-                                opacity: 70%;
+                                opacity: 50%;
                             }
                         }
                     }
