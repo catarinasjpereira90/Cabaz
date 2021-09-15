@@ -1,44 +1,44 @@
-.bottom-arrows{
+.bottom-arrows {
     @include mq(0, 512px) {
-        display:none;
+        display: none;
     }
-    .wrapper{
-        padding:0px;
-        .multiple-items{
-            height:30vh;
-            width:100%;
-            overflow:hidden;
-            position:relative;
-            div img{
-                width:100%;
+    .wrapper {
+        padding: 0px;
+        .multiple-items {
+            height: 30vh;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            div img {
+                width: 100%;
             }
-            .slick-prev{
-                cursor:pointer;
-                i{
-                    font-size:30px;
-                    position:absolute;
-                    z-index:1;
-                    color:black;
-                    top:50%;
-                    transform:translateY(-50%);
-                    left:3%;
-                    &:hover{
-                        opacity:70%;
+            .slick-prev {
+                cursor: pointer;
+                i {
+                    font-size: 30px;
+                    position: absolute;
+                    z-index: 1;
+                    color: black;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 3%;
+                    &:hover {
+                        opacity: 70%;
                     }
                 }
             }
-            .slick-next{
-                cursor:pointer;
-                i{
-                    font-size:30px;
-                    position:absolute;
-                    z-index:1;
-                    color:black;
-                    top:50%;
-                    transform:translateY(-50%);
-                    right:3%;
-                    &:hover{
-                        opacity:70%;
+            .slick-next {
+                cursor: pointer;
+                i {
+                    font-size: 30px;
+                    position: absolute;
+                    z-index: 1;
+                    color: black;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 3%;
+                    &:hover {
+                        opacity: 70%;
                     }
                 }
             }

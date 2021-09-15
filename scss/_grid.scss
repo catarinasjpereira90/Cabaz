@@ -1,15 +1,20 @@
 .grid {
     .wrapper {
+        @include mq(0, 980px) {
+            padding: 0px;
+        }
         .grid-container {
             max-width: 900px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, 300px);
-            grid-template-rows: repeat(auto-fit, 300px);
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 300px 300px 300px;
             height: 900px;
             justify-content: center;
-            @include mq(0, 512px) {
+            @include mq(0, 980px) {
                 height: 1200px;
+                grid-template-columns: 100%;
+                grid-template-rows: 300px 300px 300px 300px;
             }
             div {
                 background-color: #ffba95;
@@ -48,7 +53,8 @@
                         margin-top: 10px;
                     }
                 }
-                @include mq(0, 512px) {
+
+                @include mq(0, 980px) {
                     &:nth-of-type(odd) {
                         display: none;
                     }

@@ -2,6 +2,9 @@
     .wrapper {
         text-align: center;
         height: 30vh;
+        @include mq(0, 512px) {
+            height: 40vh;
+        }
         article {
             margin-bottom: 25px;
             border: black;
@@ -9,6 +12,9 @@
                 font-size: 23px;
                 margin-bottom: 15px;
                 font-family: $font;
+                @include mq(0, 512px) {
+                    font-size: 20px;
+                }
             }
             p {
                 font-size: 16px;
